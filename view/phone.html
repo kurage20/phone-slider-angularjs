@@ -1,0 +1,18 @@
+  <ul class="nav nav-pills nav-stacked" role="tablist">
+
+    <li class="active"><a href="#">Back</a></li>
+      <img src="{{selectedPhone.image}}" class="details">
+    <ul>
+    	<li>Battery: {{selectedPhone.battery}}</li>
+    	<li>CPU: {{selectedPhone.cpu}}</li>
+    	<li>GPU: {{selectedPhone.gpu}}</li>
+    	<li>Memory: {{selectedPhone.internal_memory}}</li>
+    	<li>Ram: {{selectedPhone.ram}}</li>
+    	<li>LTE: {{selectedPhone.lte}}</li>
+    	<li>Price: {{selectedPhone.price.split(" ")[0] | currency:"€"}}</li>
+    </ul>
+    <style type="text/css">
+        body {
+            background: white
+        }
+        </style>
