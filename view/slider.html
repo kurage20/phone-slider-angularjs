@@ -2,11 +2,11 @@
     <img id="prev" ng-click="prev()" src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Arrow-Left-icon.png"></img>
     <div id="slider">
     <div ng-repeat="phone in phones" class="phone" remove-on-right-click>
-       <a href="#!{{phone.id}}" ng-click="getPhone($event)"><img ng-src="{{phone.image}}" alt=""> 
+       <a href="#!{{phone.id}}" ng-click="getPhone($event)"><img ng-src="{{phone.image}}"> 
        <div class="phoneName">{{phone.name}}</div></a> 
 
         </div>
-        <img  id="next" ng-click="next()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvB0dViSNrj_SJwfNyLtqMCZL95--3eDCrByHQEGEIgq07-V5u" alt="">
+        <img id="next" ng-click="next()" src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Arrow-Right-icon.png" alt="">
 
     </div>
-</div>
+</div>	

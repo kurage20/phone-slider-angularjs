@@ -23,10 +23,11 @@ $scope.prev = function() {
 }
 
 $scope.getPhone = function(event) {
-	for(i = 0; i < $scope.phones.length; i++)
-	if(event.target.currentSrc === $scope.phones[i].image) {
-		$scope.selectedPhone = $scope.phones[i]
-	}
+	$scope.phones.forEach(function(phone) {
+		if(event.target.currentSrc === phone.image) {
+			$scope.selectedPhone = phone
+		}
+	})
 }
 })
 
@@ -55,18 +56,18 @@ app.config(function($routeProvider) {
     })
 })
 
-app.directive('removeOnRightClick', function(){
-  return{
+app.directive('removeOnRightClick', function() {
+  return {
     restrict: 'A',
-    link: function(scope, element, attr){
-      element.bind('contextmenu', function(e){
+    link: function(scope, element, attr) {
+      element.bind('contextmenu', function(e) {
         e.preventDefault();
         element.remove()
-       for(i = 0; i < scope.phones.length; i++) {
-       	if(scope.phones[i].id === scope.phone.id) {
-       		scope.phones.splice(i,1)
-       	}
-       }
+       
+       var index = scope.phones.map(function(phone) {
+       		return phone.id
+       }).indexOf(scope.phone.id)
+       scope.phones.splice(index, 1)
       })
     }
   }
