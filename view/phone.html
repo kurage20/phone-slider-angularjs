@@ -1,10 +1,12 @@
-  <ul class="nav nav-pills nav-stacked" role="tablist">
+<nav aria-label="...">
+  <ul class="pager">
+    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Back</a> </li>
+</ul>
+<div class="selected-phone-name"><h4>{{selectedPhone.name}}</h4></div>
 
-<li class="active"><a href="#">Back </a></li>
-    <div id="detailsImgDiv">
-      <img src="{{selectedPhone.image}}" class="detailsImg">
+    <div id="details-img-div">
+      <img src="{{selectedPhone.image}}" class="details-img">
       </div>
-
 
     <div class="panel panel-default" class="details">
   <div class="panel-heading">
@@ -22,6 +24,7 @@
         <li>Price: {{selectedPhone.price.split(" ")[0] | currency:"€"}}</li>
     </ul>
   </div>
+  
     <style type="text/css">
         body {
             background: white

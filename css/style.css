@@ -10,7 +10,7 @@
     -webkit-user-select: none;
 
 }
-.phoneName {
+.phone-name {
     text-align: center;
     font-size:15px;
     margin-top:5px;
@@ -58,7 +58,7 @@
 body {
     background-color: #ededed;
 }
-.detailsImg {
+.details-img {
     height:350px;
     width:auto;
 }
@@ -70,7 +70,7 @@ body {
     border-color: #dddddd;
     font-weight: bold
 }
-#detailsImgDiv {
+#details-img-div {
     width:400px;
     height:400px;
     border: 1px solid;
@@ -80,4 +80,18 @@ body {
 
 .panel {
     width:400px;
+}
+.selected-phone-name {
+    width:400px;
+    text-align:center;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  transition:all linear 0.5s;
+}
+
+.animate-show.ng-leave.ng-leave-active {
+    opacity:0;
 }
