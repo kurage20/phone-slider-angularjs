@@ -3,7 +3,7 @@
     <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Back</a> </li>
 </ul>
 <div class="selected-phone-name"><h4>{{selectedPhone.name}}</h4></div>
-
+<div class="row">
     <div id="details-img-div">
       <img src="{{selectedPhone.image}}" class="details-img">
       </div>
@@ -23,6 +23,7 @@
         <li>LTE: {{selectedPhone.lte}}</li>
         <li>Price: {{selectedPhone.price.split(" ")[0] | currency:"€"}}</li>
     </ul>
+  </div>
   </div>
   
     <style type="text/css">

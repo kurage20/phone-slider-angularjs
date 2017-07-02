@@ -85,13 +85,3 @@ body {
     width:400px;
     text-align:center;
 }
-
-.animate-repeat.ng-move,
-.animate-repeat.ng-enter,
-.animate-repeat.ng-leave {
-  transition:all linear 0.5s;
-}
-
-.animate-show.ng-leave.ng-leave-active {
-    opacity:0;
-}
