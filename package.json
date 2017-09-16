@@ -1,22 +1,18 @@
 {
-  "name": "phoneslider-angularjs-electron",
+  "name": "angularjs-slider",
   "version": "1.0.0",
-  "description": "small angularjs practice",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "description": "spark project",
+  "main": "js/app.js",
+  "dependencies": {
+    "lite-server": "^2.3.0"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.6.2"
-  }
+    "lite-server": "^2.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "",
+  "license": "ISC"
 }
