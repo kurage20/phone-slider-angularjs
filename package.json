@@ -1,18 +1,13 @@
 {
   "name": "angularjs-slider",
   "version": "1.0.0",
-  "description": "spark project",
-  "main": "js/app.js",
-  "dependencies": {
-    "lite-server": "^2.3.0"
-  },
-  "devDependencies": {
-    "lite-server": "^2.3.0"
-  },
+  "description": "small angularjs project",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "electron ."
   },
-  "author": "",
-  "license": "ISC"
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
 }
