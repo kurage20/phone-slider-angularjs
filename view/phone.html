@@ -1,0 +1,31 @@
+<nav aria-label="...">
+  <ul class="pager">
+    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Back</a> </li>
+</ul>
+<div class="selected-phone-name"><h4>{{selectedPhone.name}}</h4></div>
+    <div id="details-img-div">
+      <img src="{{selectedPhone.image}}" class="details-img">
+      </div>
+
+    <div class="panel panel-default" class="details">
+  <div class="panel-heading">
+    <h3 class="panel-title">Specifications:</h3>
+  </div>
+  <div class="panel-body">
+    <ul><li>Back camera: {{selectedPhone.back_camera}}</li>
+        <li>Battery: {{selectedPhone.battery}}</li>
+        <li>Battery removable: {{selectedPhone.battery_removable}}</li>
+        <li>CPU: {{selectedPhone.cpu}}</li>
+        <li>GPU: {{selectedPhone.gpu}}</li>
+        <li>Memory: {{selectedPhone.internal_memory}}</li>
+        <li>Ram: {{selectedPhone.ram}}</li>
+        <li>LTE: {{selectedPhone.lte}}</li>
+        <li>Price: {{selectedPhone.price.split(" ")[0] | currency:"€"}}</li>
+    </ul>
+  </div>
+  
+    <style type="text/css">
+        body {
+            background: white
+        }
+        </style>

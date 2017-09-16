@@ -1,0 +1,12 @@
+<div class="container">
+    <img id="prev" ng-click="prev()" src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Arrow-Left-icon.png"></img>
+    <div id="slider">
+    <div ng-repeat="phone in phones" class="phone" remove-on-right-click>
+       <a href="#!{{phone.id}}" ng-click="getPhone($event)"><img ng-src="{{phone.image}}"> 
+       <div class="phone-name">{{phone.name}}</div></a> 
+
+        </div>
+        <img id="next" ng-click="next()" src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Arrow-Right-icon.png" alt="">
+
+    </div>
+</div>	
